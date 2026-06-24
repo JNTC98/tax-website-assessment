@@ -41,12 +41,37 @@ header {
     z-index: 1000;
     background: #fff;
     border-bottom: 1px solid #000;
+    margin-bottom: 30px;
 }
 
 nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #000;
+}
+
+.brand .logo span {
+    font-size: 1rem;
 }
 
 nav ul {
@@ -60,9 +85,11 @@ nav ul {
 
 nav a {
     display: inline-block;
-    padding: 10px 12px;
+    padding: 10px 14px;
     font-weight: 600;
-    transition: background 0.2s ease;
+    transition: background 0.2s ease, color 0.2s ease;
+    border-radius: 12px;
+    color: #111;
 }
 
 nav a:hover {
@@ -83,6 +110,32 @@ section {
 }
 
 section + section {
+    margin-top: 24px;
+}
+
+/* Boxes container for side-by-side layout */
+.boxes-container {
+    display: flex;
+    gap: 24px;
+    padding: 60px 24px;
+}
+
+.boxes-container .box {
+    flex: 1;
+    background: #fff;
+    border: 1px solid #000;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.boxes-container h2 {
+    margin-top: 0;
+}
+
+.background-section {
+    background: #fff;
+    border: 1px solid #000;
+    padding: 60px 24px;
     margin-top: 24px;
 }
 
