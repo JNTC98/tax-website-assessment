@@ -86,13 +86,29 @@ section {
 section + section { margin-top: 24px; }
 
 /* Boxes container for side-by-side layout */
-.boxes-container { display: flex; gap: 20px; padding: 24px 0 0 0; }
-
-.boxes-container .box {
-    flex: 1; background: var(--surface); border: 1px solid var(--border);
-    padding: 22px; border-radius: 12px; box-shadow: 0 6px 18px rgba(16,24,40,0.03);
+.boxes-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    padding: 0;
+    margin-top: 24px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
 }
 
+.boxes-container .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background: linear-gradient(145deg, #fffef2 0%, #fffdf0 100%);
+    border: 1px solid var(--border);
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(16,24,40,0.04);
+}
+
+.boxes-container .box > :last-child { margin-bottom: 0; }
 .boxes-container h2 { margin-top: 0; }
 
 .background-section { background: var(--surface); border: 1px solid var(--border); padding: 36px 24px; margin-top: 24px; border-radius: 10px; }
