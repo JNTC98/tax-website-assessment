@@ -22,55 +22,141 @@
         </nav>
     </header>
 
-    <main>
-        <!-- #intro -->
-        <section>
-            <h1>Tax 101</h1>
-            <p>Tax 101 is the learning hub of the website, created to break business tax into practical ideas that are easier to understand and act on.</p>
-            <p>It is designed for people who may not have a finance background but still need clear guidance around filing, deductions, planning, and day-to-day decision-making.</p>
+    <main class="page-shell">
+        <section class="hero-panel">
+            <div class="hero-copy">
+                <p class="eyebrow">Tax 101 • Guided learning journey</p>
+                <h1>Build confidence with a smarter tax learning flow</h1>
+                <p>Tax 101 now feels more like a guided roadmap than a static page. Move through the essentials, explore recordkeeping habits, and discover practical planning ideas that make tax feel less intimidating.</p>
+            </div>
+            <div class="hero-highlights">
+                <div class="mini-card"><strong>1</strong><span>Know the difference between income and expenses.</span></div>
+                <div class="mini-card"><strong>2</strong><span>Keep records so filing feels calm and organised.</span></div>
+                <div class="mini-card"><strong>3</strong><span>Plan ahead for deadlines and cash flow.</span></div>
+            </div>
         </section>
 
-        <!-- #essentials -->
-        <section>
-            <h2>Start with the essentials</h2>
-            <ul>
-                <li><strong>Income:</strong> money earned by the business is the foundation of most tax calculations.</li>
-                <li><strong>Expenses:</strong> legitimate business costs can help reduce taxable amounts when recorded properly.</li>
-                <li><strong>Records:</strong> good records make filing easier and reduce the risk of mistakes.</li>
-            </ul>
+        <section class="switcher-section">
+            <div class="switcher-controls" role="tablist" aria-label="Tax 101 learning topics">
+                <button class="switcher-btn active" type="button" data-panel="basics" aria-selected="true">1. Foundations</button>
+                <button class="switcher-btn" type="button" data-panel="records" aria-selected="false">2. Records</button>
+                <button class="switcher-btn" type="button" data-panel="deductions" aria-selected="false">3. Deductions</button>
+                <button class="switcher-btn" type="button" data-panel="planning" aria-selected="false">4. Planning</button>
+                <button class="switcher-btn" type="button" data-panel="mistakes" aria-selected="false">5. Mistakes</button>
+            </div>
+
+            <div class="switcher-panels">
+                <article class="switcher-panel active" id="basics">
+                    <div class="panel-grid">
+                        <div class="card">
+                            <h2>Start with the fundamentals</h2>
+                            <p>Income is the money your business earns, while expenses are the costs involved in running it. Understanding the difference helps you see what may affect your tax position and why accurate records matter from day one.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Quick starter checklist</h3>
+                            <ul class="checklist">
+                                <li>Separate business income from personal spending.</li>
+                                <li>Track major costs as they happen.</li>
+                                <li>Keep a simple calendar for filing deadlines.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="switcher-panel" id="records">
+                    <div class="panel-grid">
+                        <div class="card">
+                            <h2>Why records are your best tool</h2>
+                            <p>Good recordkeeping turns tax time from a scramble into a controlled process. Receipts, invoices, bank statements, and notes make it easier to support claims and spot patterns in your business finances.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Best habits to build</h3>
+                            <ul class="checklist">
+                                <li>Save receipts in a consistent folder or app.</li>
+                                <li>Review transactions weekly instead of waiting for tax season.</li>
+                                <li>Keep your records date order and easy to search.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="switcher-panel" id="deductions">
+                    <div class="panel-grid">
+                        <div class="card">
+                            <h2>Deductions can lower your taxable amount</h2>
+                            <p>When a cost is genuinely connected to your business, it may be deductible. The key is to keep evidence, understand the rules, and avoid claiming expenses that are personal or unsupported.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Examples that often matter</h3>
+                            <ul class="checklist">
+                                <li>Office supplies and software subscriptions.</li>
+                                <li>Travel and delivery costs tied to the business.</li>
+                                <li>Professional services such as accounting support.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="switcher-panel" id="planning">
+                    <div class="panel-grid">
+                        <div class="card">
+                            <h2>Planning turns stress into control</h2>
+                            <p>Strong planning means reviewing cash flow, setting aside money for obligations, and checking your business position before deadlines arrive. It is far easier to make smart decisions when tax is treated as an ongoing activity.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Practical planning ideas</h3>
+                            <ul class="checklist">
+                                <li>Set aside a percentage of income regularly.</li>
+                                <li>Revisit your numbers monthly.</li>
+                                <li>Use simple forecasts to prepare for slow months.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="switcher-panel" id="mistakes">
+                    <div class="panel-grid">
+                        <div class="card">
+                            <h2>Common mistakes are easier to avoid</h2>
+                            <p>New business owners often mix personal and business spending, forget to keep documentation, or underestimate how quickly deadlines can appear. The best protection is a simple rhythm: record, review, and confirm.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Watch out for these</h3>
+                            <ul class="checklist">
+                                <li>Missing receipts for claimed costs.</li>
+                                <li>Late submissions caused by poor planning.</li>
+                                <li>Confusing business expenses with personal purchases.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="quote-card">
+                        <p><strong>Remember:</strong> tax confidence grows when your records are organised, your questions are clear, and your habits stay consistent.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="panel-footer">
+                <button class="switcher-nav-btn" type="button" data-nav="prev">← Previous</button>
+                <button class="switcher-nav-btn" type="button" data-nav="next">Next →</button>
+            </div>
         </section>
 
-        <!-- #planning -->
         <section class="boxes-container">
             <div class="box about-box">
-                <h2>Why records matter</h2>
-                <p>Organised records help business owners track what was earned, what was spent, and what needs to be reported. They also make planning far less stressful.</p>
+                <h2>Why this approach works</h2>
+                <p>Breaking the topic into small steps makes the process feel more approachable and easier to repeat. It supports better planning without overwhelming first-time learners.</p>
             </div>
             <div class="box contact-box">
-                <h2>What good planning looks like</h2>
-                <p>Planning ahead means understanding deadlines, preparing money in advance, and reviewing what the business is doing before tax time arrives.</p>
+                <h2>What good tax habits look like</h2>
+                <p>Consistency matters more than perfection. A clear routine for recording, reviewing, and preparing can make a huge difference over the course of a year.</p>
             </div>
-        </section>
-
-        <!-- #questions -->
-        <section>
-            <h2>Common beginner questions</h2>
-            <ul>
-                <li>What should be recorded as a business expense?</li>
-                <li>When do filing obligations usually arise?</li>
-                <li>How can a business prepare without feeling rushed?</li>
-            </ul>
-        </section>
-
-        <!-- #overview -->
-        <section>
-            <h2>The bigger picture</h2>
-            <p>Understanding the basics of tax does more than improve compliance. It helps business owners feel more in control, make stronger decisions, and approach tax as part of everyday business management rather than a sudden burden.</p>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2026 Tax Solution. No rights reserved.</p>
     </footer>
+
+    <script src="../Logic/script.js"></script>
 </body>
 </html>
