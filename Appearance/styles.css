@@ -78,6 +78,7 @@ nav a:hover { background: rgba(247,217,74,0.18); transform: translateY(-1px); }
 
 main, section { width: 100%; }
 
+/* #section */
 section {
     padding: 48px 24px; max-width: 1200px; margin: 0 auto; background: var(--surface);
     border: 1px solid var(--border); border-radius: var(--radius); box-shadow: 0 6px 22px rgba(16,24,40,0.04);
