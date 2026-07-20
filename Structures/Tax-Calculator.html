@@ -23,39 +23,78 @@
     </header>
 
     <main>
-        <!-- #calculator -->
-        <section>
-            <h1>Estimate with more confidence</h1>
-            <p>The calculator page is designed to help business owners create a quick planning estimate before filing season or before making important financial decisions.</p>
-            <p>Instead of feeling like a full accounting tool, it acts as a practical starting point for understanding possible tax obligations and preparing for what lies ahead.</p>
+        <section class="page-shell">
+            <div class="hero-panel">
+                <div>
+                    <p class="eyebrow">Tax planning</p>
+                    <h1>Tax calculator</h1>
+                    <p>Enter a price and choose your own GST and import tax rates. This version is intentionally simple and ready for JavaScript later.</p>
+                    <div class="hero-actions">
+                        <a class="btn" href="#calculator-form">Open calculator</a>
+                        <a class="btn btn-secondary" href="Tax101.html">Learn more</a>
+                    </div>
+                </div>
+                <div class="hero-highlights">
+                    <div class="mini-card"><strong>1</strong><span>Enter the item price</span></div>
+                    <div class="mini-card"><strong>2</strong><span>Type your GST rate</span></div>
+                    <div class="mini-card"><strong>3</strong><span>Type your import tax rate</span></div>
+                </div>
+            </div>
         </section>
 
-        <!-- #details -->
-        <section class="boxes-container">
-            <div class="box about-box">
-                <h2>What the estimate helps with</h2>
-                <p>It gives users a clearer sense of how income, expenses, and business activity may affect taxable amounts, making planning feel less reactive and more intentional.</p>
-            </div>
-            <div class="box contact-box">
-                <h2>Who benefits most</h2>
-                <p>It is especially useful for new founders, side-hustle owners, and small operators who want a simple way to understand potential obligations without needing specialist knowledge.</p>
+        <section id="calculator-form" class="calculator-shell">
+            <div class="calculator-grid">
+                <div class="calculator-card">
+                    <h2>Tax calculator</h2>
+                    <p class="muted">This layout is ready for a simple calculation feature.</p>
+
+                    <form class="calculator-form">
+                        <div class="form-group">
+                            <label for="item-price">Item price</label>
+                            <input type="number" id="item-price" name="item-price" placeholder="e.g. 100" min="0" step="0.01">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gst-rate">GST rate (%)</label>
+                            <input type="number" id="gst-rate" name="gst-rate" placeholder="e.g. 10" min="0" step="0.1">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="import-rate">Import tax rate (%)</label>
+                            <input type="number" id="import-rate" name="import-rate" placeholder="e.g. 5" min="0" step="0.1">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Notes</label>
+                            <textarea id="notes" name="notes" rows="3" placeholder="Optional notes"></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn" disabled>Calculate</button>
+                            <button type="reset" class="btn btn-secondary">Reset</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="result-card">
+                    <h2>Estimate preview</h2>
+                    <p class="muted">The result will appear here once the JavaScript is added.</p>
+                    <div class="result-row"><span>Subtotal</span><strong>$0.00</strong></div>
+                    <div class="result-row"><span>GST</span><strong>$0.00</strong></div>
+                    <div class="result-row"><span>Import tax</span><strong>$0.00</strong></div>
+                    <div class="result-row total"><span>Total</span><strong>$0.00</strong></div>
+                </div>
             </div>
         </section>
 
-        <!-- #usage -->
         <section>
-            <h2>How to use the planning view</h2>
+            <h2>Why this calculator can help</h2>
+            <p>This simple tool is designed to make tax planning feel less confusing. It gives you a quick way to estimate how much extra cost may be added when GST and import tax are applied.</p>
             <ul>
-                <li>Start with a realistic view of income and major business costs.</li>
-                <li>Use the estimate to spot areas where planning could reduce stress.</li>
-                <li>Treat the result as a guide for preparation rather than a final tax outcome.</li>
+                <li>It helps you understand the total cost of an item more clearly.</li>
+                <li>It makes it easier to compare prices before buying or selling.</li>
+                <li>It gives beginners a simple starting point for learning about tax calculations.</li>
             </ul>
-        </section>
-
-        <!-- #why -->
-        <section>
-            <h2>Why this matters</h2>
-            <p>For many entrepreneurs, reaching a tax estimate early creates more control over budgeting, decision-making, and cash flow. That sense of preparation is often just as valuable as the number itself.</p>
         </section>
     </main>
 
