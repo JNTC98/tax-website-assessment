@@ -200,13 +200,6 @@ button:disabled {
     color: #8f7300;
 }
 
-.hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 18px;
-}
-
 .btn {
     display: inline-block;
     background: var(--accent);
@@ -372,7 +365,7 @@ button:disabled {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    background: #fffdf0;
+    background: #ffffff;
     border: 1px solid var(--border);
     padding: 20px;
     border-radius: 8px;
