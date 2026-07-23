@@ -42,3 +42,44 @@ if (panels.length && buttons.length) {
 
     updatePanel(0);
 }
+
+// calculator
+const calculatorForm = document.querySelector('.calculator-form');
+const calculateButton = document.getElementById('calculate-btn');
+const subtotalValue = document.getElementById('subtotal-value');
+const gstValue = document.getElementById('gst-value');
+const importValue = document.getElementById('import-value');
+const totalValue = document.getElementById('total-value');
+
+function formatCurrency(value) {
+    return `$${value.toFixed(2)}`;
+}
+
+function resetResults() {
+    if (subtotalValue) subtotalValue.textContent = '$0.00';
+    if (gstValue) gstValue.textContent = '$0.00';
+    if (importValue) importValue.textContent = '$0.00';
+    if (totalValue) totalValue.textContent = '$0.00';
+}
+
+if (calculatorForm && calculateButton) {
+    calculateButton.addEventListener('click', () => {
+        const revenue = Number(document.getElementById('item-price').value) || 0;
+        const gstRate = Number(document.getElementById('gst-rate').value) || 0;
+        const importRate = Number(document.getElementById('import-rate').value) || 0;
+
+        const subtotal = revenue;
+        const gst = revenue * (gstRate / 100);
+        const importTax = revenue * (importRate / 100);
+        const total = subtotal + gst + importTax;
+
+        subtotalValue.textContent = formatCurrency(subtotal);
+        gstValue.textContent = formatCurrency(gst);
+        importValue.textContent = formatCurrency(importTax);
+        totalValue.textContent = formatCurrency(total);
+    });
+
+    calculatorForm.addEventListener('reset', () => {
+        resetResults();
+    });
+}
